@@ -12,8 +12,8 @@ body {
 }
 
 .modal-div {
-  width: 10rem;
-  height: 100px;
+  width: 20rem;
+  height: 20rem;
   border: 1px solid #ccc;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -21,6 +21,7 @@ body {
   transform: translateY(-100vh);
   transition: all 0.5s;
   z-index: 3;
+  background: #fff;
 }
 .show-modal {
   z-index: 2;
@@ -35,6 +36,56 @@ body {
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.show-modal:hover {
+  box-shadow: 0 1px 30px rgb(105, 207, 96);
+}
+
+.modal-input {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-input input {
+  padding: 15px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  width: 70%;
+  outline: none;
+}
+
+.modal-btn .close-modal {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.modal-btn .confirm-modal {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  background: rgba(14, 233, 14, 0.6);
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(14, 233, 14, 0.6);
+}
+
+.modal-btn .confirm-modal:hover {
+  background-color: rgba(14, 233, 14, 0.4);
 }
 
 .backdrop {
